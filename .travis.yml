@@ -22,7 +22,6 @@ script:
 
 deploy:
   provider: script
-  install: travis_wait 30 mvn install
   script: bash ./deploy.sh
   on:
     branch: master
