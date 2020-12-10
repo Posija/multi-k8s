@@ -1,4 +1,4 @@
-docker build -t posija/multi-client:latest -t posija/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t posija/multi-client:latest -t posija/multi-client:$SHA -f ./server/Dockerfile ./client
 docker build -t posija/multi-server:latest -t posija/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t posija/multi-worker:latest -t posija/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
