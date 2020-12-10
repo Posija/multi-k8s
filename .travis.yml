@@ -12,7 +12,7 @@ before_install:
   - gcloud components update kubectl
   - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project vertical-album-298113
-  - gcloud config set compute/zone us-central1-a
+  - gcloud config set compute/zone europe-north1-c
   - gcloud container clusters get-credentials multi-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t posija/react-test -f ./client/Dockerfile.dev ./client
